@@ -19,6 +19,7 @@ public class BotClass extends TelegramLongPollingBot {
     private SoccerPlayer soccerPlayers;
     private String messageText;
 
+
     public BotClass() {
         celebrities = new Celebrity();
         historicalCharacters = new HistoricalCharacter();
@@ -121,6 +122,7 @@ public class BotClass extends TelegramLongPollingBot {
             userSession.setCorrectGuess(userSession.getCorrectGuess()+1);
             sendMessageText(userID, "💥💥💥 Congratulations!💥💥💥 " +
                     "\n\nThat's correct!\n" + userSession.getName());
+            sendPhoto(userID, "./photos/child/" + userSession.getName() + ".jpg");
             sendPhoto(userID, "./photos/adult/" + userSession.getName() + ".jpg");
             userSession.setHintMode(false);
             sendMessageText(userID, "⏯ type the number of category to continue" +
