@@ -1,6 +1,6 @@
 # Telegram Guessing Game Bot
 
-![Bot Preview](/preview.png)
+![Bot Preview](/end.jpg/start.jpg)
 
 ## Table of Contents
 - [Introduction](#introduction)
